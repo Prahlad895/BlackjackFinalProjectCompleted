@@ -3,6 +3,10 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
+/**
+ * Account creation form for the Blackjack application.
+ * Handles user input for creating a new account and validation of input fields.
+ */
 public class CreateForm extends JFrame {
     final private Font mainFont = new Font("Inter", Font.PLAIN, 18);
     JTextField tfName;
@@ -10,6 +14,12 @@ public class CreateForm extends JFrame {
     JPasswordField pfPassword2;
     static User user1;
 
+    /**
+     * Initializes and displays the account creation form UI.
+     *
+     * @precondition None.
+     * @postcondition Account creation form is visible and ready for user input.
+     */
     public void initialize(){JLabel lbCreateForm = new JLabel("Create Account", SwingConstants.CENTER);
         lbCreateForm.setFont(mainFont);
 

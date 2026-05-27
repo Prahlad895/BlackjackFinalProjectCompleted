@@ -6,12 +6,22 @@ import javax.swing.*;
 // Add this import for MainFrame class
 import javax.swing.border.Border;
 
+/**
+ * Login form for the Blackjack application.
+ * Handles user input for login and navigation to account creation or game start.
+ */
 public class LoginForm extends JFrame{
     final private Font mainFont = new Font("Inter", Font.PLAIN, 18);
     JTextField tfName;
     JPasswordField pfPassword;
     static User user1;
 
+    /**
+     * Initializes and displays the login form UI.
+     *
+     * @precondition None.
+     * @postcondition Login form is visible and ready for user interaction.
+     */
     public void initialize(){
         JLabel lbLoginForm = new JLabel("Login Form", SwingConstants.CENTER);
         lbLoginForm.setFont(mainFont);
@@ -104,6 +114,13 @@ public class LoginForm extends JFrame{
         }
        
 
+    /**
+     * Main entry point for the login form.
+     *
+     * @param args Command-line arguments (not used).
+     * @precondition None.
+     * @postcondition Login form is displayed.
+     */
     public static void main(String[] args) {
         LoginForm loginForm = new LoginForm();
         loginForm.initialize();
