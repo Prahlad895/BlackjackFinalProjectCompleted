@@ -1,0 +1,9 @@
+Instalation:
+    - Install mysql server on your laptop from mysql website
+    - mysql -u root -p "PASSWORD" -h 127.0.0.1 (login to mysql client)
+    - In mysql prompts into mysql command prompt: 
+        - create databases Blackjack; (this creates the database on your local computer)
+        - quit; (exits out of mysql client)
+    - In normal terminal run:
+        - mysql -u root -p "PASSWORD" -h 127.0.0.1 Blackjack < blackjack.sql
+
