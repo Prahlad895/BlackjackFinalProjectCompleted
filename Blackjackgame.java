@@ -22,14 +22,14 @@ public class Blackjackgame {
     public int boardWidth = 600;
     public int boardHeight = 600;
     public boolean mainHandGray = false;
-    public boolean forceSplit = false;
+    public boolean forceSplit = true;
 
     public final int cardWidth = 110;
     public final int cardHeight = 154;
 
     private boolean revealDealerCard = false;
     private boolean waitingForSplitAction = false;
-    private boolean handResolved = false;
+    private boolean handResolved = true;
 
 
     //image util class for grey scaling
